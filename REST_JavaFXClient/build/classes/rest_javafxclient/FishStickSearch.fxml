@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="rest_javafxclient.FishStickSearchController">
+ 
+<children>
+        <Button fx:id="buttonSearch" layoutX="541.0" layoutY="14.0" onAction="#handleSearchAction" text="Search" />
+<TextField fx:id="textFieldSearch" layoutX="14.0" layoutY="14.0" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="517.0" />
+<TableView fx:id="tableView" layoutX="14.0" layoutY="54.0" prefHeight="524.0" prefWidth="581.0">
+<columns>
+    <TableColumn prefWidth="100.0" text="ID">
+    <cellValueFactory>
+    <PropertyValueFactory property="id" />
+    </cellValueFactory>
+    </TableColumn>
+    
+    <TableColumn prefWidth="120.0" text="Record Number">
+    <cellValueFactory>
+    <PropertyValueFactory property="recordNum" />
+    </cellValueFactory>
+    </TableColumn>
+    
+    <TableColumn prefWidth="120.0" text="Omega">
+    <cellValueFactory>
+    <PropertyValueFactory property="omega" />
+    </cellValueFactory>
+    </TableColumn>
+    
+    <TableColumn prefWidth="120.0" text="Lambda">
+    <cellValueFactory>
+    <PropertyValueFactory property="lambda" />
+    </cellValueFactory>
+    </TableColumn>
+    
+    <TableColumn prefWidth="124.0" text="UUID">
+    <cellValueFactory>
+    <PropertyValueFactory property="uuid" />
+    </cellValueFactory>
+    </TableColumn>
+</columns>
+</TableView>
+</children>
+</AnchorPane>
